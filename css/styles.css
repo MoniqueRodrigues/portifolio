@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(163, 34, 195);
+    background: linear-gradient(0deg, rgb(221, 207, 224) 0%, rgba(105, 47, 230, 0.656) 100%);
+    background-color:rgb(163, 34, 195); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    /* margin: 20px 0px; */
+}
+
+.container-aside {
+    background-color: rgb(102, 7, 102);
+    /* margin-top:50px; */
+    width:20%;
+
+}
+
+.container-imgs {
+    margin-top: 100px;
+    /* background-color: aliceblue; */
+    display: inline-block;
+    /* margin: 0; */
+    /* justify-content: center; */
+
+
+}
+
+.foto-perfil {
+    width: 190px;
+    height: 190px;
+    border-radius: 200px;
+    /* margin-top:40x;    */
+    /* justify-content: center; */
+    padding: 5px;
+}
+
+.nome {
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+/* .iconeGitHub{
+    align-items: center;
+} */
+
+.container-conteudos {
+    /* background-color: green; */
+    margin: 50px;
+}
+
+.sobre-mim {
+    /* background-color: red; */
+}
+.apresentacao{
+    padding: 20px;
+    /* background-color: aquamarine; */
+}
+.minha-jornada {
+    /* background-color: brown; */
+
+}
+.dados-pessoais{
+    display: flex;
+    margin-left: 40px;
+}
+.dados-pessoais p{
+    margin-left:10px
+}
+.container-card {
+    display: flex;
+    /* background-color: lightblue; */
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    width: 290px;
+    height: 300px;
+    background-color: grey;
+    margin: 20px;
+    border-radius: 10px;
+    margin: 40px 80px;
+
+}
+
+
+
+
+
+/* media query */
+
+@media screen and (min-width:768px)and (max-width: 1023px) {
+    .container-card {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .container {
+        /* display: flex;
+        margin: 20px; */
+        flex-direction: column;
+    }
+
+    .container-aside {
+        display: inline-block;
+        /* margin: 0 auto; */
+        width: 100%;    
+
+    }
+    /* .container-imgs{
+      
+    } */
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container-card {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .container {
+        /* display: flex;
+        margin: 20px; */
+        flex-direction: column;
+    }
+
+    .container-aside {
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
