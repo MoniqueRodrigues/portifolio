@@ -1,25 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap'); */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-
+    font-family: "Lato", Sans-serif;
 }
 
 body {
     /* background: rgb(163, 34, 195); */
-    color: rgb(233, 226, 226);
+    color: #ffffff;
     --cor-primaria: rgba(105, 47, 230, 0.656);
-    background: linear-gradient(0deg, rgb(221, 207, 224) 0%, rgba(105, 47, 230, 0.656) 100%);
+    --cor-secundaria: #cd8cee;
+    background: linear-gradient(0deg, rgb(146, 11, 177) 0%,  rgb(39, 26, 39)100%);
 }
-
 
 .container {
     display: flex;
@@ -27,9 +24,16 @@ body {
 }
 
 .container-aside {
-    background-color: var(--cor-primaria);
+    /* background-color: var(--cor-primaria); */
     /* width: 20%; */
-
+    background-color:var(--cor-secundaria);  
+}
+.aside-conteudo{
+    margin-top: 60px;
+}
+h3{
+    color: var(--cor-secundaria);
+    font-weight: bolder;
 }
 
 .container-imgs {
@@ -48,7 +52,11 @@ body {
 
 .nome {
     text-align: center;
-    font-size: 1.3rem;
+    font-weight:bolder;
+    /* color:var(--cor-primaria); */
+}
+.nome :hover{
+    color: #220433;
 }
 
 .container-conteudos {
@@ -73,6 +81,11 @@ body {
     display: flex;
     margin-left: 40px;
 }
+.dados-pessoais p:hover{
+    background-color: #cd8cee;
+    padding: 1px 2px;
+    font-weight: bold;
+}
 
 .dados-pessoais p {
     margin-left: 10px
@@ -80,26 +93,50 @@ body {
 
 .container-card {
     display: flex;
-    /* background-color: lightblue; */
+    /* display: inline-block; */
     justify-content: center;
     flex-wrap: wrap;
 }
+p{
+    line-height:25px;
+    text-align:justify;
+}
+.title :hover{
+    color: #cd8cee;
+
+}
 
 .card {
-    width: 250px;
+    width: 280px;
     height: 250px;
     background-color: grey;
-    border-radius: 10px;
-    margin: 20px 20px;
+    /* border-radius: 20px; */
+    margin: 40px 20px;
     border: 1px solid var(--cor-primaria);
+    display: inline-block;
+    align-items: center;    
 
+}
+.card p{
+    text-align: center;
+
+}
+
+.card p:hover{
+    color: #cd8cee;
+    padding: 1px 2px;
+    font-weight: bold;
+}
+
+.img-card{
+    width: 280px;
+    height: 250px;
 }
 
 
 
 
-
-/* media query */
+/* -----------------MEDIA QUERY-------------------------- */
 
 @media screen and (max-width:767px) {
 
@@ -111,9 +148,9 @@ body {
         flex-direction: column;
         padding: 0;
         align-items: center;
+        flex-wrap: nowrap;
 
-    }
-
+    } 
     .container {
         display: flex;
         flex-direction: column;
@@ -125,31 +162,37 @@ body {
         padding: 10px;
     }
 
+    .aside-conteudo{
+        /* margin-bottom:60px; */
+    }
+
+    
     .fotoPerfil {
         text-align: center;
     }
 
-}
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            /* background-color: black;    */
 
-.foto-perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    /* background-color: black;    */
-
-}
-
-
-.dados-pessoais {
-    margin-left: 10px;
-}
+        }
+        .dados-pessoais {
+            margin-left: 10px;
+        }
+    }
 
 
 
+
+
+
+/* TABLET */
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-
+    
     body {
         overflow-x: hidden;
     }
@@ -158,8 +201,12 @@ body {
         flex-direction: column;
         padding: 0;
         align-items: center;
-
     }
+
+    /* .card {
+      justify-content: center;
+
+    } */
 
     .container {
         display: flex;
@@ -176,15 +223,18 @@ body {
         text-align: center;
     }
 
-    .foto-perfil {
-        width: 150px;
-        height: 150px;
-        border-radius: 150px;
-    }
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            /* background-color: black;    */
+
+        }
 
 
-    .dados-pessoais {
-        margin-left: 10px;
-    }
+        .dados-pessoais {
+            margin-left: 10px;
+        }
 
+   
 }
