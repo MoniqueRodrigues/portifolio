@@ -35,9 +35,11 @@ body {
     margin-top: 60px;
 }
 
-.gitHub {
+.linkedin-github  {
     display: flex;
     justify-content: center;
+    /* background-color: #220433; */
+    margin-top: 10px;
 
 }
 
@@ -242,7 +244,7 @@ footer {
 
     }
 
-    .gitHub {
+    .linkedin-linkedin-github   {
         margin-top: 20px;
     }
 
@@ -317,7 +319,7 @@ footer {
 
     }
 
-    .gitHub {
+    .linkedin-github  {
         margin-top: 20px;
     }
 
