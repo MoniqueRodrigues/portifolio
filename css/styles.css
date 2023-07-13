@@ -158,7 +158,7 @@ p {
 .img-card {
     width: 280px;
     height: 250px;
-    border: 2px solid var(--cor-terciaria);
+    border: 2px solid var(--cor-branca);
 }
 
 footer {
