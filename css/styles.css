@@ -42,6 +42,9 @@ body {
     margin-top: 10px;
 
 }
+.linkedin-github img{
+    width:40px;
+}
 
 .olaMundo,
 .minha-jornada,
@@ -158,8 +161,9 @@ p {
 }
 
 .img-card {
-    width: 280px;
+    width: 250px;
     height: 250px;
+    border-radius: 280px;
     border: 2px solid var(--cor-branca);
 }
 
@@ -205,10 +209,10 @@ footer {
         height: 230px;
     }
 
-    .img-card {
+    /* .img-card {
         width: 260px;
         height: 230px;
-    }
+    } */
 
     .container {
         display: flex;
