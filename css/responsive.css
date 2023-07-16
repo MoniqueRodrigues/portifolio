@@ -8,7 +8,11 @@
     .nome :hover {
         color: var(--cor-secundaria);
     }
+    
+    .apresentacao h2{
+        text-align: justify;
 
+    }
     .container-card {
         flex-direction: column;
         padding: 0;
