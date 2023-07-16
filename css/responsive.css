@@ -21,6 +21,8 @@
         height: 230px;
     }
 
+
+
     .container {
         display: flex;
         flex-direction: column;
@@ -58,6 +60,20 @@
     .linkedin-linkedin-github {
         margin-top: 20px;
     }
+    
+    .minhaJornada{
+        padding: 2px 15px;
+        letter-spacing:1px;       
+
+    }
+
+    .minhaJornada,
+    .meuNetworking {
+    border:0;  
+  
+}
+
+
 
 }
 
