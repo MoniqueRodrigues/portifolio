@@ -46,7 +46,8 @@
     }
 
     .aside-conteudo {
-        margin-top: 60px;
+    margin-top: 60px;
+    position: absolute;
 
     }
 
@@ -81,9 +82,6 @@
         border: 0;
 
     }
-
-
-
 }
 
 
@@ -129,6 +127,7 @@
 
     .aside-conteudo {
         margin-top: 60px;
+        position: absolute;
 
     }
 

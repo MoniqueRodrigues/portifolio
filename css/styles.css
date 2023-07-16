@@ -22,12 +22,15 @@ body {
 }
 
 .container-aside {
-    width: 210px;
+    width: 25vw;
     background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
 }
 
 .aside-conteudo {
     margin-top: 60px;
+    position: fixed;
 }
 
 .linkedin-github {
@@ -41,8 +44,9 @@ body {
 }
 
 .linkedin-github img:hover {
-    width:46px;
+    width: 46px;
 }
+
 .minhaJornada,
 .meuNetworking {
     border: solid 1px #deaff8;
@@ -62,15 +66,20 @@ body {
     margin-top: 100px;
 }
 
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+}
+
 .foto-perfil {
     width: 170px;
     height: 170px;
     border-radius: 185px;
     border: 1px solid #220433;
     padding: 5px;
-    text-align: center;
     background-color: var(--cor-terciaria);
 }
+
 
 .nome {
     text-align: center;
@@ -178,5 +187,3 @@ footer {
 .direitos {
     padding-top: 20px;
 }
-
-
