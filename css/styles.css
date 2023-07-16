@@ -40,6 +40,9 @@ body {
     width: 40px;
 }
 
+.linkedin-github img:hover {
+    width:46px;
+}
 .minhaJornada,
 .meuNetworking {
     border: solid 1px #deaff8;
