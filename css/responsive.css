@@ -1,5 +1,6 @@
 /* -----------------MEDIA QUERY-------------------------- */
 
+/* MOBILE */
 @media screen and (max-width:767px) {
     .nome {
         font-size: 30px;
@@ -8,11 +9,12 @@
     .nome :hover {
         color: var(--cor-secundaria);
     }
-    
-    .apresentacao h2{
+
+    .apresentacao h2 {
         text-align: justify;
 
     }
+
     .container-card {
         flex-direction: column;
         padding: 0;
@@ -25,7 +27,11 @@
         height: 230px;
     }
 
-
+    .img-card {
+        width: 230px;
+        height: 230px;
+        border-radius: 230px;
+    }
 
     .container {
         display: flex;
@@ -64,20 +70,17 @@
     .linkedin-linkedin-github {
         margin-top: 20px;
     }
-    
-    .minhaJornada{
-        padding: 2px 15px;     
- 
-    }
-    .minhaJornada p{
 
+    .minhaJornada {
+        padding: 2px 15px;
     }
+
 
     .minhaJornada,
     .meuNetworking {
-    border:0;  
-  
-}
+        border: 0;
+
+    }
 
 
 
