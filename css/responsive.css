@@ -66,8 +66,10 @@
     }
     
     .minhaJornada{
-        padding: 2px 15px;
-        letter-spacing:1px;       
+        padding: 2px 15px;     
+ 
+    }
+    .minhaJornada p{
 
     }
 
